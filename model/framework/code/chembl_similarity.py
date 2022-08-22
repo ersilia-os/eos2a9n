@@ -4,7 +4,7 @@ import json
 import sys
 
 # Input Parameters
-input_file = open("input_smiles.txt", 'r')
+input_file = open(sys.argv[1], 'r')
 Lines = input_file.readlines()[1:]
 
 fp        = 'ECFP4'
