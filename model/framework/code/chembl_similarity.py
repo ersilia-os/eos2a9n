@@ -16,7 +16,7 @@ maxDist   = '50'
 data = []
 for input_smiles in Lines:
     input_smiles = input_smiles.strip() 
-    url = 'http://130.92.106.217:8080/chemblECfp4.v1.NoJava/search.jsp?maxCount=' + maxCount + '&type=numOfMols&maxDist=' +  maxDist + '&group2=None&sdfMol=&inputMol=&mask=0&smi=' + input_smiles + '&searchMode=searchByNum&limit=100'
+    url = 'http://130.92.106.217:8080/chemblECfp4.v1.NoJava/search.jsp?maxCount=100&type=numOfMols&maxDist=50&group2=None&sdfMol=&inputMol=&mask=0&smi='+ input_smiles + '&searchMode=searchByNum&limit=100'
     r = requests.get(url)
     soup = BeautifulSoup(r.text, features = 'html.parser')
     results = soup.find_all('textarea')
