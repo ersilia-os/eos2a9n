@@ -11,7 +11,7 @@ Given a molecule, this model looks for its 100 nearest neighbors in the ChEMBL d
 
 * Input: `Compound`
 * Input Shape: `Single`
-* Task: `Generative`
+* Task: `Similarity`
 * Output: `Compound`
 * Output Type: `String`
 * Output Shape: `List`
