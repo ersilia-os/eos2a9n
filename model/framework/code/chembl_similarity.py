@@ -9,12 +9,15 @@ from bs4 import BeautifulSou
 import requests
 import json
 import sys
+import urllib
+
 
 def read_100_nearest(smiles):
     data = []
     for input_smiles in smiles:
         input_smiles = input_smiles.strip() 
-        url = 'https://multi-fpb.gdb.tools/chemblsFP.v1.NoJava/search.jsp?maxCount=100&type=numOfMols&maxDist=50&group2=None&sdfMol=&inputMol=&mask=0&smi=' + input_smiles + '&searchMode=searchByNum&limit=100'
+        url_encoded_smiles = urllib.parse.quote(input_smiles)
+        url = 'https://multi-fpb.gdb.tools/chemblsFP.v1.NoJava/search.jsp?maxCount=100&type=numOfMols&maxDist=50&group2=None&sdfMol=&inputMol=&mask=0&smi=' + url_encoded_smiles + '&searchMode=searchByNum&limit=100'
         r = requests.get(url)
         soup = BeautifulSoup(r.text, features = 'html.parser')
         results = soup.find_all('textarea')
