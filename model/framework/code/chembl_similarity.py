@@ -4,11 +4,7 @@ import sys
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", bs4])
 
-<<<<<<< HEAD
-from bs4 import BeautifulSou
-=======
 from bs4 import BeautifulSoup
->>>>>>> 6224c03 (Update to latest service and resolved the bs4 import error)
 
 import requests
 import json
