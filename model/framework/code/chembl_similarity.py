@@ -1,4 +1,11 @@
-from bs4 import BeautifulSoup
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", bs4])
+
+from bs4 import BeautifulSou
+
 import requests
 import json
 import sys
