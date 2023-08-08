@@ -25,6 +25,8 @@ Given a molecule, this model looks for its 100 nearest neighbors in the ChEMBL d
 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos2a9n)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2a9n.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos2a9n) (AMD64, ARM64)
 
 ## Citation
 
