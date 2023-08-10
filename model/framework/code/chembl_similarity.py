@@ -1,5 +1,6 @@
 import subprocess
 import sys
+import time
 
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", bs4])
@@ -29,6 +30,7 @@ def read_100_nearest(smiles):
             x = i.split(" CHEMBL")[0]
             smiles_list.append(x)
         data+= [smiles_list]
+        time.sleep(5)
     return data
 
 
