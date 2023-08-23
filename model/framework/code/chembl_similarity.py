@@ -17,7 +17,6 @@ from time import sleep
 def read_100_nearest(smiles):
     data = []
     for input_smiles in smiles:
-        print(input_smiles)
         input_smiles = input_smiles.strip() 
         url_encoded_smiles = urllib.parse.quote(input_smiles)
         url = 'https://multi-fpb.gdb.tools/chemblsFP.v1.NoJava/search.jsp?maxCount=100&type=numOfMols&maxDist=50&group2=None&sdfMol=&inputMol=&mask=0&smi=' + url_encoded_smiles + '&searchMode=searchByNum&limit=100'
@@ -31,7 +30,5 @@ def read_100_nearest(smiles):
             x = i.split(" CHEMBL")[0]
             smiles_list.append(x)
         data+= [smiles_list]
-        time.sleep(15)
+        time.sleep(10)
     return data
-
-

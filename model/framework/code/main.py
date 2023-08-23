@@ -23,6 +23,16 @@ with open(input_file, "r") as f:
 
 # run model
 outputs = read_100_nearest(smiles_list)
+no_results = []
+for i,o in enumerate(outputs):
+    if len(o)==0:
+        no_results += [smiles_list[i]]
+outputs_r2 = read_100_nearest(no_results)
+
+for i,s in enumerate(smiles_list):
+    for i2,s2 in enumerate(no_results):
+        if s == s2:
+            outputs[i] = outputs_r2[i2]
 
 #check input and output have the same lenght
 input_len = len(smiles_list)
@@ -32,6 +42,6 @@ assert input_len == output_len
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["100_chembl_nearest"])  # header
+    writer.writerow([f"smi_{i}" for i in range(100)])  # header
     for o in outputs:
         writer.writerow(o)
