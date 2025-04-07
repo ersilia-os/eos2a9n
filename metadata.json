@@ -4,34 +4,45 @@
     "Status": "Ready",
     "Title": "Similarity search in ChEMBL",
     "Description": "Given a molecule, this model looks for its 100 nearest neighbors in the ChEMBL database, according to ECFP4 Tanimoto similarity. Due to size constraints, the model redirects queries to the ChEMBL server, so when using this model predictions are posted online.\n",
-    "Mode": "Online",
+    "Source": "Online",
+    "Source Type": "External",
     "Input": [
         "Compound"
     ],
     "Input Shape": "Single",
-    "Task": [
-        "Similarity"
+    "Input Dimension": 1,
+    "Task": "Sampling",
+    "Subtask": "Similarity search",
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Not Applicable"
     ],
     "Output": [
         "Compound"
     ],
-    "Output Type": [
-        "String"
-    ],
-    "Output Shape": "List",
+    "Output Dimension": 100,
+    "Output Consistency": "Fixed",
     "Interpretation": "List of 100 nearest neighbors",
     "Tag": [
         "ChEMBL",
         "Similarity"
     ],
     "Publication": "https://www.frontiersin.org/articles/10.3389/fchem.2020.00046/full",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2020,
     "Source Code": "http://130.92.106.217:8080/chemblMuti.v1/",
     "License": "None",
     "Contributor": "Amna-28",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2a9n.zip",
+    "Incorporation Date": "2022-08-18",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2a9n",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2a9n.zip",
+    "Deployment": [
+        "Local"
     ]
 }
