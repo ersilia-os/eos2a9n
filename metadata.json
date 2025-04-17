@@ -3,22 +3,19 @@
     "Slug": "chembl-similarity",
     "Status": "Ready",
     "Title": "Similarity search in ChEMBL",
-    "Description": "Given a molecule, this model looks for its 100 nearest neighbors in the ChEMBL database, according to ECFP4 Tanimoto similarity. Due to size constraints, the model redirects queries to the ChEMBL server, so when using this model predictions are posted online.\n",
+    "Description": "Given a molecule, this model looks for its 100 nearest neighbors in the ChEMBL database, according to ECFP4 Tanimoto similarity. Due to size constraints, the model redirects queries to the ChEMBL server, so when using this model predictions are posted online.",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Online",
     "Source Type": "External",
+    "Task": "Sampling",
+    "Subtask": "Similarity search",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
     "Input Dimension": 1,
-    "Task": "Sampling",
-    "Subtask": "Similarity search",
-    "Biomedical Area": [
-        "Any"
-    ],
-    "Target Organism": [
-        "Not Applicable"
-    ],
+    "Input Shape": "Single",
     "Output": [
         "Compound"
     ],
@@ -29,20 +26,23 @@
         "ChEMBL",
         "Similarity"
     ],
-    "Publication": "https://www.frontiersin.org/articles/10.3389/fchem.2020.00046/full",
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2020,
+    "Publication": "https://www.frontiersin.org/articles/10.3389/fchem.2020.00046/full",
     "Source Code": "http://130.92.106.217:8080/chemblMuti.v1/",
     "License": "None",
     "Contributor": "Amna-28",
-    "Incorporation Date": "2022-08-18",
+    "Incorporation Date": "2022-08-20",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2a9n.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2a9n",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
-    ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2a9n.zip",
-    "Deployment": [
-        "Local"
     ]
 }
