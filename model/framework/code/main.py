@@ -44,7 +44,7 @@ for o in outputs:
 
 #check input and output have the same lenght
 input_len = len(smiles_list)
-output_len = len(outputs)
+output_len = len(outputs_)
 assert input_len == output_len
 
 # write output in a .csv file
