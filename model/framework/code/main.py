@@ -51,5 +51,5 @@ assert input_len == output_len
 with open(output_file, "w") as f:
     writer = csv.writer(f)
     writer.writerow([f"smiles_{i:02}" for i in range(100)]) # header
-    for o in outputs:
+    for o in outputs_:
         writer.writerow(o)
