@@ -37,7 +37,7 @@ for i,s in enumerate(smiles_list):
 empty_line = [""]*100
 outputs_ = []
 for o in outputs:
-    if not o:
+    if len(o) == 0:
         outputs_ += [empty_line]
     else:
         outputs_ += [o]
