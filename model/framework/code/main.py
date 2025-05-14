@@ -34,6 +34,14 @@ for i,s in enumerate(smiles_list):
         if s == s2:
             outputs[i] = outputs_r2[i2]
 
+empty_line = [""]*100
+outputs_ = []
+for o in outputs:
+    if not o:
+        outputs_ += [empty_line]
+    else:
+        outputs_ += [o]
+
 #check input and output have the same lenght
 input_len = len(smiles_list)
 output_len = len(outputs)
