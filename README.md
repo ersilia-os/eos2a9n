@@ -50,7 +50,12 @@ _10 of 100 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `249`
+- **Image Size (Mb):** `222.28`
 
+**Computational Performance (seconds):**
+- 10 inputs: `93.42`
+- 100 inputs: `-1`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [http://130.92.106.217:8080/chemblMuti.v1/](http://130.92.106.217:8080/chemblMuti.v1/)
