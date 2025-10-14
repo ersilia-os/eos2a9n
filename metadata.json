@@ -15,7 +15,6 @@
         "Compound"
     ],
     "Input Dimension": 1,
-    "Input Shape": "Single",
     "Output": [
         "Compound"
     ],
@@ -52,5 +51,6 @@
     "Computational Performance 2": 829.95,
     "Computational Performance 3": -1.0,
     "Computational Performance 4": -1.0,
-    "Computational Performance 5": -1.0
+    "Computational Performance 5": -1.0,
+    "Input Shape": "Single"
 }
