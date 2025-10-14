@@ -4,6 +4,7 @@ Given a molecule, this model looks for its 100 nearest neighbors in the ChEMBL d
 
 This model was incorporated on 2022-08-20.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos2a9n`
@@ -13,7 +14,7 @@ This model was incorporated on 2022-08-20.
 - **Task:** `Sampling`
 - **Subtask:** `Similarity search`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `ChEMBL`, `Similarity`
 
 ### Input
