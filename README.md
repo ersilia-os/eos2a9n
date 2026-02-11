@@ -2,7 +2,7 @@
 
 Given a molecule, this model looks for its 100 nearest neighbors in the ChEMBL database, according to ECFP4 Tanimoto similarity. Due to size constraints, the model redirects queries to the ChEMBL server, so when using this model predictions are posted online.
 
-This model was incorporated on 2022-08-20.Last packaged on 2025-10-22.
+This model was incorporated on 2022-08-20.Last packaged on 2026-02-11.
 
 ## Information
 ### Identifiers
@@ -50,10 +50,10 @@ _10 of 100 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `305`
-- **Image Size (Mb):** `290.53`
+- **Image Size (Mb):** `293.54`
 
 **Computational Performance (seconds):**
-- 10 inputs: `54.42`
+- 10 inputs: `51.06`
 - 100 inputs: `-1`
 - 10000 inputs: `-1`
 
