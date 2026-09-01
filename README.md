@@ -28,16 +28,16 @@ This model was incorporated on 2022-08-20.Last packaged on 2026-02-11.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| smiles_00 | string |  | Sampled smiles 0 from a similarity search in ChEMBL |
-| smiles_01 | string |  | Sampled smiles 1 from a similarity search in ChEMBL |
-| smiles_02 | string |  | Sampled smiles 2 from a similarity search in ChEMBL |
-| smiles_03 | string |  | Sampled smiles 3 from a similarity search in ChEMBL |
-| smiles_04 | string |  | Sampled smiles 4 from a similarity search in ChEMBL |
-| smiles_05 | string |  | Sampled smiles 5 from a similarity search in ChEMBL |
-| smiles_06 | string |  | Sampled smiles 6 from a similarity search in ChEMBL |
-| smiles_07 | string |  | Sampled smiles 7 from a similarity search in ChEMBL |
-| smiles_08 | string |  | Sampled smiles 8 from a similarity search in ChEMBL |
-| smiles_09 | string |  | Sampled smiles 9 from a similarity search in ChEMBL |
+| smi_00 | string |  | Sampled smiles 0 from a similarity search in ChEMBL |
+| smi_01 | string |  | Sampled smiles 1 from a similarity search in ChEMBL |
+| smi_02 | string |  | Sampled smiles 2 from a similarity search in ChEMBL |
+| smi_03 | string |  | Sampled smiles 3 from a similarity search in ChEMBL |
+| smi_04 | string |  | Sampled smiles 4 from a similarity search in ChEMBL |
+| smi_05 | string |  | Sampled smiles 5 from a similarity search in ChEMBL |
+| smi_06 | string |  | Sampled smiles 6 from a similarity search in ChEMBL |
+| smi_07 | string |  | Sampled smiles 7 from a similarity search in ChEMBL |
+| smi_08 | string |  | Sampled smiles 8 from a similarity search in ChEMBL |
+| smi_09 | string |  | Sampled smiles 9 from a similarity search in ChEMBL |
 
 _10 of 100 columns are shown_
 ### Source and Deployment
