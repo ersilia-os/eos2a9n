@@ -3,7 +3,7 @@
     "Slug": "chembl-similarity",
     "Status": "Ready",
     "Title": "Similarity search in ChEMBL",
-    "Description": "Given a molecule, this model looks for its 100 nearest neighbors in the ChEMBL database, according to ECFP4 Tanimoto similarity. Due to size constraints, the model redirects queries to the ChEMBL server, so when using this model predictions are posted online.",
+    "Description": "Finds the 100 compounds in ChEMBL most similar to a query, ranked by Tanimoto similarity over ECFP4 fingerprints. Because the database is too large to ship with the model, queries are forwarded to a remote service maintained by the Reymond group at the University of Bern rather than computed locally. Results therefore reflect the version of ChEMBL indexed by that service and require network access. Similarity is purely structural and implies nothing about shared biological activity.",
     "Deployment": [
         "Local"
     ],
@@ -20,7 +20,7 @@
     ],
     "Output Dimension": 100,
     "Output Consistency": "Fixed",
-    "Interpretation": "List of 100 nearest neighbors",
+    "Interpretation": "List of the 100 nearest neighbours to the query molecule in ChEMBL.",
     "Tag": [
         "ChEMBL",
         "Similarity"
