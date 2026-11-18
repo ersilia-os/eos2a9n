@@ -2,7 +2,8 @@
 
 Finds the 100 compounds in ChEMBL most similar to a query, ranked by Tanimoto similarity over ECFP4 fingerprints. Because the database is too large to ship with the model, queries are forwarded to a remote service maintained by the Reymond group at the University of Bern rather than computed locally. Results therefore reflect the version of ChEMBL indexed by that service and require network access. Similarity is purely structural and implies nothing about shared biological activity.
 
-This model was incorporated on 2022-08-20.Last packaged on 2026-09-01.
+This model was incorporated on 2022-08-20.
+Last packaged on 2026-09-01.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 100 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos2a9n](https://hub.docker.com/r/ersiliaos/eos2a9n)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2a9n.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2a9n.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos2a9n_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos2a9n_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
